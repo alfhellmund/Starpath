@@ -2,43 +2,36 @@
 
 Statische Webseite für die App **Starpath** (App Store): Datenschutzerklärung, Support-Kontakt, Impressum.
 
-Hosting über **GitHub Pages**: <https://alfhellmund.github.io/Starpath/> — **noch nicht eingerichtet.**
+Gehostet via **GitHub Pages**: <https://alfhellmund.github.io/Starpath/>
 
 ## Repository
 
-Dieser Ordner wird — wie bei BaroWatch (`~/Development/BaroWatch/Website/` =
-`github.com/alfhellmund/BaroWatch`) — ein **eigenes Git-Repository, das nur die Website enthält**.
-Ziel-Repository: `github.com/alfhellmund/Starpath` (enthält bisher nur `LICENSE`).
-Das App-Repository bleibt davon getrennt; der Quellcode der App wird nicht veröffentlicht.
-
-Noch nicht angelegt: `git init` und die Anbindung an das Ziel-Repository macht die
-Projektleitung nach Freigabe. Für die Veröffentlichung wie bei BaroWatch zusätzlich
-`.github/workflows/pages.yml` (Actions `configure-pages`, `upload-pages-artifact`, `deploy-pages`)
-übernehmen; `.nojekyll` liegt schon bereit.
+Dieses Repository enthält nur die Website — wie bei BaroWatch (`github.com/alfhellmund/BaroWatch`).
+Der Quellcode der App liegt getrennt davon und wird nicht veröffentlicht.
+Jeder Push auf `main` veröffentlicht über `.github/workflows/pages.yml`.
 
 ## Seiten
 
 - `index.html` — Startseite
-- `privacy.html` — Datenschutzerklärung (DE + EN, deutsche Fassung maßgeblich), Fassung 1.0, Stand 2026-10-26
+- `privacy.html` — Datenschutzerklärung (DE + EN, deutsche Fassung maßgeblich)
 - `support.html` — Support-Kontakt + FAQ (DE + EN)
 - `impressum.html` — Anbieterkennzeichnung (§ 5 DDG / § 18 MStV)
 - `style.css` — aus der BaroWatch-Website übernommen, ergänzt um die Klasse `.pruefen`
 
-Deutsche Texte in der Sie-Form (wie BaroWatch), englische neutral mit „you“.
+Deutsche Texte in der Sie-Form, englische neutral mit „you“.
 
-## Vor der Veröffentlichung
+## Änderungen an der Datenschutzerklärung
 
-1. Alle Entwurfsmarker abarbeiten und entfernen:
-   ```sh
-   grep -n 'class="pruefen"' *.html
-   ```
-   Die Ausgabe muss leer sein.
-2. Datenschutzerklärung gegen den dann aktuellen App-Stand prüfen. Abschnitt 3 beschreibt den
-   Code-Stand vom 2026-10-26; der iCloud-Abgleich ist darin bereits als entfernt angenommen.
-   Kommt das Lesen der BaroWatch-Druckwerte über eine App-Gruppe hinzu, braucht Abschnitt 3.2
-   einen Nachtrag.
-3. Link zur Datenschutzerklärung in der App und in App Store Connect eintragen
-   (App Store Review Guideline 5.1.1(i)).
+Ändert die App Berechtigungen, Speicherung oder Datenwege (z. B. das Lesen der BaroWatch-Druckwerte
+über eine App-Gruppe), wird `privacy.html` gegen den Code nachgezogen und Fassung und Stand im Kopf
+der Seite erhöht. In der App verweist „Über“ → „Rechtliches“ auf diese Seite (`LegalLinks.swift`).
+
+Offene Punkte in einem Entwurf werden mit `<span class="pruefen">…</span>` markiert. Vor jedem Push
+muss diese Suche leer sein:
+
+```sh
+grep -n 'class="pruefen"' *.html
+```
 
 ## Lokal testen
 
