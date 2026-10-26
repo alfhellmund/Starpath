@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1>Datenschutzerklärung</h1>
-    <p>Starpath — Fassung 1.0, Stand: 26. Oktober 2026</p>
+    <p>Starpath — Fassung 1.1, Stand: 26. Oktober 2026</p>
   </header>
 
   <div class="lang-switch">
@@ -48,6 +48,7 @@
     <h3>3.1 Standort (GPS)</h3>
     <p>Starpath fragt nach der Ortungsfreigabe „Beim Verwenden der App“, sobald Sie in der Astronavigation GPS einschalten. Ohne Freigabe arbeitet die App mit Ihren eigenen Eingaben.</p>
     <p><strong>Zweck:</strong> Die GPS-Position wird auf der Karte als Marker und gepunktete Spur gezeigt, Kurs und Fahrt über Grund werden angezeigt, Sie können die GPS-Position als Ausgangsort übernehmen, und die GPS-Kontrolle vergleicht sie mit dem aus Ihren Sichten beobachteten Ort (Schutz gegen gestörtes oder verfälschtes GPS).</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; die App liest den Standort nur mit Ihrer Ortungsfreigabe (siehe Abschnitt 6).</p>
     <p><strong>Speicherung:</strong></p>
     <ul>
       <li>Der Verlauf der GPS-Positionen der letzten 24 Stunden wird nur im Arbeitsspeicher gehalten und beim Beenden der App verworfen.</li>
@@ -59,7 +60,9 @@
 
     <h3>3.2 Luftdruck (Barometer)</h3>
     <p>Wählen Sie in den Einstellungen unter <em>Druckquelle</em> „Gerät“, liest Starpath den Luftdruck aus dem Barometer von iPad oder iPhone. Dafür fragt das System nach der Freigabe „Bewegung &amp; Fitness“. Ab Werk ist „Fest“ eingestellt; dann wird kein Sensor gelesen.</p>
-    <p><strong>Zweck:</strong> Refraktionsbeschickung der Sextantenhöhe. <strong>Speicherung:</strong> Jede neue Sicht übernimmt den letzten Messwert mit Messzeit und Herkunft. Auf dem Mac gibt es diese Funktion nicht.</p>
+    <p><strong>Zweck:</strong> Refraktionsbeschickung der Sextantenhöhe.</p>
+    <p><strong>Speicherung:</strong> Jede neue Sicht übernimmt den letzten Messwert mit Messzeit und Herkunft. Auf dem Mac gibt es diese Funktion nicht.</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; die App liest den Sensor nur mit Ihrer Freigabe „Bewegung &amp; Fitness“ (siehe Abschnitt 6).</p>
 
     <h3>3.3 Navigationsdaten: Sichten, Beobachtungsreihen, Bestecke, Logbuch, Reisen</h3>
     <p>Was Sie in der Astronavigation eintragen oder berechnen, speichert Starpath in einer Datenbank im App-Container des Geräts (<code>sessions.sqlite</code>):</p>
@@ -70,12 +73,18 @@
     </ul>
     <p>Vor einer Umstellung des Datenbankformats bei einem App-Update legt Starpath einmalig eine Sicherungskopie dieser Datenbank im selben Container an.</p>
     <p>Diese Daten zeigen, wo und wann sich Ihr Schiff befand. Sie bleiben auf dem Gerät.</p>
+    <p><strong>Zweck:</strong> Standlinien und Besteck berechnen, Koppelweg und Logbuch führen und Ihre Beobachtungsreihen, Bestecke und Reisen über einen Neustart hinaus wieder aufrufen. Die Sicherungskopie vor einer Formatumstellung dient dazu, nach einem Fehler zum vorherigen Stand zurückkehren zu können.</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
     <h3>3.4 Einstellungen</h3>
     <p>Einstellungen wie Einheiten, Sprache, Darstellung, Schriftgröße, Augeshöhe, Temperatur, Luftdruck, Druckquelle, Instrumentenbeschickung, Sternkarten- und Kartenebenen-Anzeige speichert Starpath in den App-Einstellungen des Geräts. Dazu kommen technische Zähler, die das Gerät nicht verlassen: die Zahl der App-Starts (für den Zeitpunkt der Bewertungsanfrage, 4.3), der Zeitpunkt der letzten Leistungsdaten-Lieferung von Apple und die Zahl der darin enthaltenen Diagnosemeldungen (4.2), sowie der Anzeigestand der Bedienhinweise.</p>
+    <p><strong>Zweck:</strong> Ihre Voreinstellungen bei jedem Start anwenden; die Zähler bestimmen den Zeitpunkt der Bewertungsanfrage (4.3) bzw. erscheinen im Diagnosebericht (3.6), und bereits gezeigte Bedienhinweise werden nicht wiederholt.</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
     <h3>3.5 Rechencache</h3>
     <p>Berechnete Jahrbuchwerte legt Starpath in einem Zwischenspeicher ab (<code>almanac.sqlite</code>). Er enthält nur astronomische Werte, keine Angaben über Sie, und wird bei Bedarf neu berechnet.</p>
+    <p><strong>Zweck:</strong> Seiten schneller anzeigen, ohne dieselben Werte erneut zu berechnen.</p>
+    <p><strong>Rechtsgrundlage:</strong> Der Zwischenspeicher enthält keine personenbezogenen Daten; seine Ablage auf dem Gerät stützt sich auf § 25 Abs. 2 Nr. 2 TDDDG (siehe Abschnitt 6).</p>
 
     <h3 id="de-diagnose">3.6 Diagnosebericht (nur auf Ihre Veranlassung)</h3>
     <p>Unter <em>Über → Support → Diagnosebericht senden</em> erstellt Starpath einen Textbericht, damit sich ein Fehler nachvollziehen lässt. Sie sehen ihn vollständig, bevor Sie ihn weitergeben. Erst nach Ihrer Freigabe öffnet sich das Teilen-Fenster des Systems; dort wählen Sie selbst Empfänger und Weg (z. B. Mail an uns). Es gibt keinen automatischen Versand.</p>
@@ -89,22 +98,29 @@
       <li>Speicherstatistik und Fehlerstände.</li>
     </ul>
     <p>Der Bericht enthält keinen Gerätenamen, keine Geräte- oder Werbe-ID und kein Konto. Er wird für die Weitergabe als Datei im temporären Verzeichnis der App abgelegt.</p>
-    <p>Schicken Sie ihn uns, verwenden wir ihn ausschließlich zur Bearbeitung Ihrer Anfrage (siehe 3.7).</p>
+    <p><strong>Zweck:</strong> einen Rechen- oder Anzeigefehler nachvollziehen und beheben. Schicken Sie den Bericht uns, verwenden wir ihn ausschließlich zur Bearbeitung Ihrer Anfrage (siehe 3.7).</p>
+    <p><strong>Rechtsgrundlage:</strong> für das Erstellen auf dem Gerät auf Ihre Veranlassung § 25 Abs. 2 Nr. 2 TDDDG; für die Bearbeitung bei uns Art. 6 Abs. 1 lit. b DSGVO, hilfsweise lit. f (siehe Abschnitt 6).</p>
 
     <h3>3.7 Support-Mail</h3>
     <p><em>Über → Support → Kontakt</em> öffnet eine leere E-Mail an <a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a> ohne Anhang. Schreiben Sie uns — aus der App oder direkt —, verarbeiten wir Ihre E-Mail-Adresse, Ihren Namen, soweit angegeben, den Inhalt und ggf. einen beigefügten Diagnosebericht, um Ihre Anfrage zu beantworten. Das Postfach wird beim E-Mail-Dienst GMX geführt, einem Dienst der 1&amp;1 Mail &amp; Media GmbH, Montabaur, Deutschland.</p>
+    <p><strong>Zweck:</strong> Ihre Anfrage beantworten.</p>
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, hilfsweise lit. f (siehe Abschnitt 6).</p>
 
     <h3>3.8 PDF-Export</h3>
-    <p>Jahrbuchseiten, Beschickungstafeln, Vordrucke und Besteckberichte erzeugt Starpath als PDF auf dem Gerät. Ein Besteckbericht enthält Ihre Sichten und Positionen. Die Datei geht nur dorthin, wo Sie sie über das Teilen-Fenster oder den Sichern-Dialog hinschicken oder ablegen.</p>
+    <p>Starpath erzeugt auf dem Gerät PDF-Dateien: die Ephemeriden der Tagesseite oder des gesamten Jahres, Beschickungstafeln, ein leeres Formblatt für die Rechnung von Hand und das Besteck aus der Astronavigation. Das Besteck enthält Ihre Sichten und Positionen; die Beschickungstafeln enthalten die eingestellte Augeshöhe, Temperatur und den Luftdruck. Die Datei geht nur dorthin, wo Sie sie über Sichern, Teilen oder Drucken hinschicken oder ablegen.</p>
+    <p><strong>Zweck:</strong> Jahrbuchseiten, Tafeln, Formblatt und Besteck ausdrucken, sichern oder weitergeben.</p>
+    <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
     <h2>4. Apple-Plattformdienste</h2>
-    <p>Die folgenden Verarbeitungen führt Apple als eigener Verantwortlicher durch; wir haben darauf keinen Einfluss. Es gelten die Datenschutzbestimmungen von Apple: <a href="https://www.apple.com/de/legal/privacy/">apple.com/de/legal/privacy</a>.</p>
+    <p>Die folgenden Verarbeitungen führt Apple als eigener Verantwortlicher durch; wir haben darauf keinen Einfluss. Es gelten die Datenschutzbestimmungen von Apple: <a href="https://www.apple.com/de/legal/privacy/">apple.com/de/legal/privacy</a>. Personenbezogene Daten erhalten wir dabei nur in dem in 4.2 genannten Fall; Zweck und Rechtsgrundlage stehen dort.</p>
 
     <h3>4.1 App Store</h3>
     <p>Starpath wird über den App Store vertrieben. Kauf, Download und Updates wickelt Apple ab. Wir erhalten von Apple nur zusammengefasste Statistiken ohne Personenbezug.</p>
 
     <h3>4.2 Absturz- und Leistungsdaten über Apple</h3>
     <p>Haben Sie in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen</em> „Mit App-Entwicklern teilen“ eingeschaltet, stellt Apple uns Absturzberichte und zusammengefasste Leistungsdaten der App zur Verfügung. Ohne diese Einwilligung erhalten wir nichts. Starpath selbst wertet die von Apple gelieferten Leistungsdaten nicht aus; die App merkt sich nur Zeitpunkt und Anzahl (3.4). Sie können die Einwilligung dort jederzeit widerrufen.</p>
+    <p><strong>Zweck:</strong> Abstürze und Leistungsprobleme der App erkennen und beheben.</p>
+    <p><strong>Rechtsgrundlage:</strong> Ihre Einwilligung gegenüber Apple, Art. 6 Abs. 1 lit. a DSGVO (siehe Abschnitt 6).</p>
 
     <h3>4.3 Bewertungsanfrage</h3>
     <p>Nach mehreren App-Starts kann Starpath den Bewertungsdialog des Systems anzeigen. Ob und wie Sie bewerten, verarbeitet ausschließlich Apple.</p>
@@ -119,8 +135,9 @@
 
     <h2>6. Rechtsgrundlagen</h2>
     <ul>
-      <li><strong>Verarbeitung auf dem Gerät</strong> (Abschnitt 3.1–3.5, 3.8): Die Daten erreichen uns nicht. Die App speichert sie auf dem Gerät und greift auf sie zu, weil das für die von Ihnen ausdrücklich genutzten Funktionen unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG; Art. 6 Abs. 1 lit. b DSGVO). Standort und Luftdruck liest die App nur mit Ihrer Freigabe im System.</li>
-      <li><strong>Diagnosebericht und Support-Mail</strong> (3.6, 3.7): Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung Ihrer Anfrage zur App) bzw. lit. f (berechtigtes Interesse, Anfragen zu beantworten und Fehler zu beheben).</li>
+      <li><strong>Verarbeitung auf dem Gerät</strong> (3.1–3.4, 3.8 und das Erstellen des Diagnoseberichts in 3.6): Die Daten erreichen uns nicht. Die App speichert sie auf dem Gerät und greift auf sie zu, weil das für die von Ihnen ausdrücklich genutzten Funktionen unbedingt erforderlich ist (§ 25 Abs. 2 Nr. 2 TDDDG); soweit personenbezogene Daten verarbeitet werden, ist das zur Nutzung der App erforderlich (Art. 6 Abs. 1 lit. b DSGVO). Standort (3.1) und Luftdruck (3.2) liest die App nur mit Ihrer Freigabe im System.</li>
+      <li><strong>Rechencache</strong> (3.5): keine personenbezogenen Daten; Ablage auf dem Gerät nach § 25 Abs. 2 Nr. 2 TDDDG.</li>
+      <li><strong>Diagnosebericht und Support-Mail bei uns</strong> (3.6, 3.7): Art. 6 Abs. 1 lit. b DSGVO (Bearbeitung Ihrer Anfrage zur App), hilfsweise lit. f (berechtigtes Interesse, Anfragen zu beantworten und Fehler zu beheben).</li>
       <li><strong>Absturz- und Leistungsdaten über Apple</strong> (4.2): Ihre Einwilligung gegenüber Apple, Art. 6 Abs. 1 lit. a DSGVO.</li>
       <li><strong>Website</strong> (5): Art. 6 Abs. 1 lit. f DSGVO.</li>
     </ul>
@@ -179,7 +196,7 @@
 
     <h2>14. Änderungen</h2>
     <p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen der App oder rechtliche Anforderungen ändern. Die aktuelle Fassung steht unter dieser Adresse und ist in der App verlinkt.</p>
-    <p>Fassung 1.0, Stand: 26. Oktober 2026.</p>
+    <p>Fassung 1.1, Stand: 26. Oktober 2026.</p>
   </section>
 
   <hr class="section">
@@ -214,6 +231,7 @@
     <h3>3.1 Location (GPS)</h3>
     <p>Starpath asks for “While Using the App” location access as soon as you switch on GPS in celestial navigation. Without permission, the app works with your own entries.</p>
     <p><strong>Purpose:</strong> The GPS position is shown on the chart as a marker and a dotted track, course and speed over ground are displayed, you can adopt the GPS position as starting position, and the GPS check compares it with the position observed from your sights (protection against jammed or spoofed GPS).</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app reads location only with your location permission (see section 6).</p>
     <p><strong>Storage:</strong></p>
     <ul>
       <li>The history of GPS positions of the last 24 hours is held in memory only and discarded when the app quits.</li>
@@ -225,7 +243,9 @@
 
     <h3>3.2 Air pressure (barometer)</h3>
     <p>If you choose “Device” under <em>Pressure Source</em> in Settings, Starpath reads the air pressure from the barometer of your iPad or iPhone. The system then asks for “Motion &amp; Fitness” access. The default is “Fixed”; then no sensor is read.</p>
-    <p><strong>Purpose:</strong> refraction correction of the sextant altitude. <strong>Storage:</strong> each new sight takes the latest reading with its time and origin. This feature does not exist on the Mac.</p>
+    <p><strong>Purpose:</strong> refraction correction of the sextant altitude.</p>
+    <p><strong>Storage:</strong> each new sight takes the latest reading with its time and origin. This feature does not exist on the Mac.</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app reads the sensor only with your “Motion &amp; Fitness” permission (see section 6).</p>
 
     <h3>3.3 Navigation data: sights, sight sessions, fixes, logbook, voyages</h3>
     <p>What you enter or compute in celestial navigation is stored in a database in the app's container on the device (<code>sessions.sqlite</code>):</p>
@@ -236,12 +256,18 @@
     </ul>
     <p>Before an app update changes the database format, Starpath creates a one-time backup copy of this database in the same container.</p>
     <p>This data shows where and when your vessel was. It stays on the device.</p>
+    <p><strong>Purpose:</strong> compute lines of position and fixes, keep the dead-reckoning track and logbook, and recall your sight sessions, fixes and voyages after a restart. The backup copy before a format change serves to return to the previous state after an error.</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
     <h3>3.4 Settings</h3>
     <p>Settings such as units, language, appearance, font size, height of eye, temperature, air pressure, pressure source, instrument correction, star chart and chart layer display are stored in the app's settings on the device. In addition there are technical counters that never leave the device: the number of app launches (to time the rating request, 4.3), the time of Apple's last performance data delivery and the number of diagnostic messages in it (4.2), and the display state of the in-app tips.</p>
+    <p><strong>Purpose:</strong> apply your preferences at every launch; the counters time the rating request (4.3) or appear in the diagnostics report (3.6), and tips already shown are not repeated.</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
     <h3>3.5 Calculation cache</h3>
     <p>Starpath stores computed almanac values in a cache (<code>almanac.sqlite</code>). It contains astronomical values only, nothing about you, and is recomputed as needed.</p>
+    <p><strong>Purpose:</strong> display pages faster without computing the same values again.</p>
+    <p><strong>Legal basis:</strong> The cache contains no personal data; storing it on the device is based on Section 25 (2) No. 2 TDDDG (see section 6).</p>
 
     <h3 id="en-diagnostics">3.6 Diagnostics report (only at your request)</h3>
     <p>Under <em>About → Support → Send Diagnostics Report</em>, Starpath creates a text report so an error can be traced. You see all of it before you pass it on. Only after your approval does the system share sheet open; there you choose recipient and channel yourself (e.g. email to us). There is no automatic sending.</p>
@@ -255,22 +281,29 @@
       <li>storage statistics and error states.</li>
     </ul>
     <p>The report contains no device name, no device or advertising identifier and no account. For sharing, it is written as a file to the app's temporary directory.</p>
-    <p>If you send it to us, we use it exclusively to handle your request (see 3.7).</p>
+    <p><strong>Purpose:</strong> to trace and fix a calculation or display error. If you send the report to us, we use it exclusively to handle your request (see 3.7).</p>
+    <p><strong>Legal basis:</strong> for creating it on the device at your request Section 25 (2) No. 2 TDDDG; for handling it with us Art. 6 (1) (b) GDPR, alternatively (f) (see section 6).</p>
 
     <h3>3.7 Support email</h3>
     <p><em>About → Support → Contact</em> opens an empty email to <a href="mailto:alf.hellmund@gmx.de">alf.hellmund@gmx.de</a> without attachment. If you write to us — from the app or directly — we process your email address, your name if given, the content and any attached diagnostics report to answer your request. The mailbox is hosted by the email service GMX, a service of 1&amp;1 Mail &amp; Media GmbH, Montabaur, Germany.</p>
+    <p><strong>Purpose:</strong> to answer your request.</p>
+    <p><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR, alternatively (f) (see section 6).</p>
 
     <h3>3.8 PDF export</h3>
-    <p>Starpath creates almanac pages, correction tables, blank forms and fix reports as PDF on the device. A fix report contains your sights and positions. The file only goes where you send or save it via the share sheet or the save dialog.</p>
+    <p>Starpath creates PDF files on the device: the ephemerides of the daily page or of the full year, correction tables, a blank form for reduction by hand, and the fix from celestial navigation. The fix contains your sights and positions; the correction tables contain the configured height of eye, temperature and air pressure. The file only goes where you send or save it via Save, Share or Print.</p>
+    <p><strong>Purpose:</strong> to print, save or pass on almanac pages, tables, the blank form and the fix.</p>
+    <p><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
     <h2>4. Apple platform services</h2>
-    <p>Apple performs the following processing as an independent controller; we have no influence on it. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/en-ww/">apple.com/legal/privacy</a>.</p>
+    <p>Apple performs the following processing as an independent controller; we have no influence on it. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy/en-ww/">apple.com/legal/privacy</a>. We receive personal data only in the case described in 4.2; purpose and legal basis are stated there.</p>
 
     <h3>4.1 App Store</h3>
     <p>Starpath is distributed via the App Store. Apple handles purchase, download and updates. We receive only aggregated statistics from Apple without personal reference.</p>
 
     <h3>4.2 Crash and performance data via Apple</h3>
     <p>If you have switched on “Share With App Developers” in system settings under <em>Privacy &amp; Security → Analytics &amp; Improvements</em>, Apple provides us with crash reports and aggregated performance data of the app. Without this consent we receive nothing. Starpath itself does not evaluate the performance data delivered by Apple; the app only records time and count (3.4). You can withdraw consent there at any time.</p>
+    <p><strong>Purpose:</strong> to detect and fix crashes and performance problems of the app.</p>
+    <p><strong>Legal basis:</strong> your consent given to Apple, Art. 6 (1) (a) GDPR (see section 6).</p>
 
     <h3>4.3 Rating request</h3>
     <p>After several launches, Starpath may show the system's rating dialog. Whether and how you rate is processed by Apple only.</p>
@@ -285,8 +318,9 @@
 
     <h2>6. Legal bases</h2>
     <ul>
-      <li><strong>On-device processing</strong> (sections 3.1–3.5, 3.8): the data does not reach us. The app stores and accesses it on the device because this is strictly necessary for the features you expressly use (Section 25 (2) No. 2 TDDDG; Art. 6 (1) (b) GDPR). The app reads location and air pressure only with your permission in the system.</li>
-      <li><strong>Diagnostics report and support email</strong> (3.6, 3.7): Art. 6 (1) (b) GDPR (handling your request about the app) or (f) (legitimate interest in answering requests and fixing errors).</li>
+      <li><strong>On-device processing</strong> (3.1–3.4, 3.8 and creating the diagnostics report in 3.6): the data does not reach us. The app stores and accesses it on the device because this is strictly necessary for the features you expressly use (Section 25 (2) No. 2 TDDDG); insofar as personal data is processed, this is necessary for using the app (Art. 6 (1) (b) GDPR). The app reads location (3.1) and air pressure (3.2) only with your permission in the system.</li>
+      <li><strong>Calculation cache</strong> (3.5): no personal data; stored on the device under Section 25 (2) No. 2 TDDDG.</li>
+      <li><strong>Diagnostics report and support email with us</strong> (3.6, 3.7): Art. 6 (1) (b) GDPR (handling your request about the app), alternatively (f) (legitimate interest in answering requests and fixing errors).</li>
       <li><strong>Crash and performance data via Apple</strong> (4.2): your consent given to Apple, Art. 6 (1) (a) GDPR.</li>
       <li><strong>Website</strong> (5): Art. 6 (1) (f) GDPR.</li>
     </ul>
@@ -345,7 +379,7 @@
 
     <h2>14. Changes</h2>
     <p>We update this privacy policy when app features or legal requirements change. The current version is available at this address and is linked in the app.</p>
-    <p>Version 1.0, as of 26 October 2026.</p>
+    <p>Version 1.1, as of 26 October 2026.</p>
   </section>
 
   <footer>
