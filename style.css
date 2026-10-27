@@ -139,8 +139,7 @@ hr.section {
 }
 
 /* Entwurfsmarker: offene Prüfpunkte für den Projektinhaber.
-   Vor der Veröffentlichung müssen alle .pruefen-Elemente entfernt sein
-   (siehe README.md, Abschnitt "Vor der Veröffentlichung"). */
+   Vor jedem Push muss die Marker-Suche leer sein (README.md der Website). */
 .pruefen {
   background: var(--mark-bg);
   color: var(--mark-fg);
