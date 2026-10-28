@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1 data-quelle="a1235efbc18d">Privacy Policy</h1>
-    <p data-quelle="4e054ecb2e8f">Starpath — Version 1.2, as of <time class="stand" datetime="2026-10-27">27 October 2026</time></p>
+    <p data-quelle="0e8a57c3da86">Starpath — Version 1.3, as of <time class="stand" datetime="2026-10-28">28 October 2026</time></p>
     <p><a class="andere-sprachen" href="privacy.html" data-quelle="84041901390a">Other languages</a></p>
   </header>
 
@@ -36,13 +36,13 @@
 
     <h3 data-quelle="ad5605d0746b">3.1 Location (GPS)</h3>
     <p data-quelle="cf6ba39103c3">Starpath asks for “While Using the App” location access as soon as you switch on GPS in celestial navigation. Without permission, the app works with your own entries.</p>
-    <p data-quelle="7308107f9d1d"><strong>Purpose:</strong> The GPS position is shown on the chart as a marker and a dotted track, course and speed over ground are displayed, you can adopt the GPS position as starting position, and the GPS check compares it with the position observed from your sights (protection against jammed or spoofed GPS).</p>
+    <p data-quelle="1747cc498a87"><strong>Purpose:</strong> The GPS position is shown on the chart as a marker and a dotted track, course and speed over ground are displayed, you can adopt the GPS position as departure position, and the GPS check compares it with the observed position computed from your sights (protection against jammed or spoofed GPS).</p>
     <p data-quelle="2fc8a0eb42b4"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app uses location only with your location permission (see section 6).</p>
     <p data-quelle="fffec6e4f3af"><strong>Storage:</strong></p>
     <ul>
       <li data-quelle="9ccab4e8e509">The history of GPS positions of the last 24 hours is held in memory only and discarded when the app quits.</li>
-      <li data-quelle="cb3996e5cc21">When a sight is saved, the GPS position at the time of the sight (latitude, longitude, time, accuracy) is stored with the sight.</li>
-      <li data-quelle="8a57d6c03e11">If you adopt the GPS position as starting position, it is recorded in the logbook with the origin “GPS”.</li>
+      <li data-quelle="eaea9c75d4e3">When a sight is saved, the GPS position at the time of the sight (latitude, longitude, time, accuracy) is stored with the sight.</li>
+      <li data-quelle="6b62e29d9e0c">If you adopt the GPS position as departure position, it is recorded in the logbook with the origin “GPS”.</li>
       <li data-quelle="3ae25a9860d3">The app remembers that GPS was on, so it resumes after a restart (only if permission is still granted).</li>
     </ul>
     <p data-quelle="5fa9478c86e8">You can change or revoke permission at any time in system settings under <em>Privacy &amp; Security → Location Services → Starpath</em>.</p>
@@ -50,23 +50,23 @@
     <h3 data-quelle="4e338ab51122">3.2 Air pressure (barometer)</h3>
     <p data-quelle="1fabc6fdbe9a">If you choose “Device” under <em>Pressure Source</em> in Settings, Starpath reads the air pressure from the barometer of your iPad or iPhone. The system then asks for “Motion &amp; Fitness” access. The default is “Fixed”; then no sensor is read.</p>
     <p data-quelle="a02b92488227"><strong>Purpose:</strong> refraction correction of the sextant altitude.</p>
-    <p data-quelle="6983c3b6c2ee"><strong>Storage:</strong> each new sight takes the latest reading with its time and origin. This feature does not exist on the Mac.</p>
+    <p data-quelle="a256755665e1"><strong>Storage:</strong> each new sight takes the latest reading with its time and origin. This feature does not exist on the Mac.</p>
     <p data-quelle="0783b47a54e2"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR; the app reads the sensor only with your “Motion &amp; Fitness” permission (see section 6).</p>
 
-    <h3 data-quelle="3765d856cf36">3.3 Navigation data: sights, sight sessions, fixes, logbook, voyages</h3>
+    <h3 data-quelle="77cd8553af35">3.3 Navigation data: sights, rounds of sights, observed positions, logbook, voyages</h3>
     <p data-quelle="85916c886e22">What you enter or compute in celestial navigation is stored in a database in the app's container on the device (<code>sessions.sqlite</code>):</p>
     <ul>
-      <li data-quelle="84962f7a827d"><strong>Sight sessions</strong> with name, creation and modification time, temperature, air pressure and the computed fix (latitude, longitude, time, accuracy).</li>
-      <li data-quelle="f59d00aa1616"><strong>Sights</strong> with time, body, sextant reading, corrections and your overrides, height of eye, assumed position, temperature, air pressure and, if available, the GPS position at the time of the sight (3.1).</li>
-      <li data-quelle="84e3216ac6d1"><strong>Logbook</strong> with starting positions (latitude, longitude, time, origin: manual, GPS or observed), course and speed entries, and voyage start (with voyage name and departure position) and voyage end.</li>
+      <li data-quelle="632d2cb2602b"><strong>Rounds of sights</strong> with name, creation and modification time, temperature, air pressure and the computed observed position (latitude, longitude, time, accuracy).</li>
+      <li data-quelle="70b432d4347e"><strong>Sights</strong> with time, body, sextant reading, corrections and your overrides, height of eye, reference position, temperature, air pressure and, if available, the GPS position at the time of the sight (3.1).</li>
+      <li data-quelle="84c8216a25d6"><strong>Logbook</strong> with departure positions (latitude, longitude, time, origin: manual, GPS or observed), course and speed entries, and voyage start (with voyage name and point of departure) and voyage end.</li>
     </ul>
     <p data-quelle="e28ecfe9c3fb">Before an app update changes the database format, Starpath creates a one-time backup copy of this database in the same container.</p>
     <p data-quelle="46a9948b3f63">This data shows where and when your vessel was. It stays on the device.</p>
-    <p data-quelle="b36c0873036b"><strong>Purpose:</strong> compute lines of position and fixes, keep the dead-reckoning track and logbook, and recall your sight sessions, fixes and voyages after a restart. The backup copy before a format change serves to return to the previous state after an error.</p>
+    <p data-quelle="c21ed54358b8"><strong>Purpose:</strong> compute lines of position and the observed position, keep the dead-reckoning track and logbook, and recall your rounds of sights and voyages after a restart. The backup copy before a format change serves to return to the previous state after an error.</p>
     <p data-quelle="725b0de52cfd"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
     <h3 data-quelle="f5750a5d7231">3.4 Settings</h3>
-    <p data-quelle="3334cdfb7e5d">Settings such as units, language, appearance, font size, height of eye, temperature, air pressure, pressure source, instrument correction, star chart and chart layer display are stored in the app's settings on the device. In addition there are technical counters that never leave the device: the number of app launches (to time the rating request, 4.3), the time of Apple's last performance data delivery and the number of diagnostic messages in it (4.2), and the display state of the in-app tips.</p>
+    <p data-quelle="1bd94280520d">Settings such as units, language, appearance, font size, height of eye, temperature, air pressure, pressure source, instrument error, star chart and chart layer display are stored in the app's settings on the device. In addition there are technical counters that never leave the device: the number of app launches (to time the rating request, 4.3), the time of Apple's last performance data delivery and the number of diagnostic messages in it (4.2), and the display state of the in-app tips.</p>
     <p data-quelle="c4703aa8c25e"><strong>Purpose:</strong> apply your preferences at every launch; the counters time the rating request (4.3) or appear in the diagnostics report (3.6), and tips already shown are not repeated.</p>
     <p data-quelle="725b0de52cfd"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
@@ -83,7 +83,7 @@
       <li data-quelle="119f6f6bc2a6">current view and selected date, time zone, language and region;</li>
       <li data-quelle="c14d34f3a85d">the current position with course, speed, origin and time, the logbook entries (including voyage names), location permission state and GPS reception;</li>
       <li data-quelle="0a85fd294c91">the app's settings (values of the app's own settings; entries written by Apple system components by name only, without value);</li>
-      <li data-quelle="a6547d78f8b0">the current sight session with all sights, corrections, GPS positions at sight time and fixes; for other sessions only name, creation date and number of sights;</li>
+      <li data-quelle="3140d9cd0e48">the current round of sights with all sights, corrections, GPS positions at sight time and observed positions; for other rounds only name, creation date and number of sights;</li>
       <li data-quelle="797bca76e1e6">storage statistics and error states.</li>
     </ul>
     <p data-quelle="4932b8d9ff47">The report contains no device name, no device or advertising identifier and no account. For sharing, it is written as a file to the app's temporary directory.</p>
@@ -96,8 +96,8 @@
     <p data-quelle="f00e8353cbde"><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR, alternatively (f) (see section 6).</p>
 
     <h3 data-quelle="0fc56c78e1cc">3.8 PDF export</h3>
-    <p data-quelle="6b166a212a86">Starpath creates PDF files on the device: the ephemerides of the daily page or of the full year, correction tables, a blank form for reduction by hand, and the fix from celestial navigation. The fix contains your sights and positions; the correction tables contain the configured height of eye, temperature and air pressure. The file only goes where you send or save it via Save, Share or Print.</p>
-    <p data-quelle="da8cfa94d916"><strong>Purpose:</strong> to print, save or pass on almanac pages, tables, the blank form and the fix.</p>
+    <p data-quelle="2b4a830da483">Starpath creates PDF files on the device: the ephemerides of the daily page or of the full year, correction tables, a blank form for reduction by hand, and the round of sights from celestial navigation. The round of sights contains your sights and positions; the correction tables contain the configured height of eye, temperature and air pressure. The file only goes where you send or save it via Save, Share or Print.</p>
+    <p data-quelle="da8cfa94d916"><strong>Purpose:</strong> to print, save or pass on almanac pages, tables, the blank form and the round of sights.</p>
     <p data-quelle="725b0de52cfd"><strong>Legal basis:</strong> Section 25 (2) No. 2 TDDDG, Art. 6 (1) (b) GDPR (see section 6).</p>
 
     <h2 data-quelle="39e33dac7d51">4. Apple platform services</h2>
@@ -146,14 +146,14 @@
     <h2 data-quelle="2c05e8176f8d">8. Retention and deletion</h2>
     <ul>
       <li data-quelle="249cda37a9c5"><strong>GPS history:</strong> in memory only, at most 24 hours, ends when the app quits.</li>
-      <li data-quelle="46c50054ccc1"><strong>Navigation data and settings:</strong> until you delete them. You can delete sight sessions, sights and logbook entries individually in the app. “Reset App” in Settings resets the settings and empties the calculation cache; saved fixes and the logbook are kept. Deleting the app removes all of its data from the device.</li>
+      <li data-quelle="405ea991c620"><strong>Navigation data and settings:</strong> until you delete them. You can delete rounds of sights, sights and logbook entries individually in the app. “Reset App” in Settings resets the settings and empties the calculation cache; saved rounds of sights and the logbook are kept. Deleting the app removes all of its data from the device.</li>
       <li data-quelle="09eb0e34720f"><strong>Diagnostics report and PDF files for sharing:</strong> in the app's temporary directory, which the system cleans up itself; what you passed on is with the recipient you chose.</li>
       <li data-quelle="d51e32188f33"><strong>Support emails and diagnostics reports with us:</strong> until the request is closed, then deleted no later than 12 months afterwards.</li>
       <li data-quelle="9457c80023d9"><strong>Website logs:</strong> according to GitHub's rules (section 5).</li>
     </ul>
 
     <h2 data-quelle="09679532c7d2">9. Obligation to provide data</h2>
-    <p data-quelle="d3083650b004">You are under no legal or contractual obligation to provide data. Without location permission there is no GPS display and no GPS check; without motion permission no measured air pressure; all other features work with your entries. Without a diagnostics report, an error may be harder for us to trace.</p>
+    <p data-quelle="3d17c7ccbb27">You are under no legal or contractual obligation to provide data. Without location permission there is no GPS display and no GPS check; without motion permission no measured air pressure; all other features work with your entries. Without a diagnostics report, an error may be harder for us to trace.</p>
 
     <h2 data-quelle="549b934a0e67">10. No automated decision-making</h2>
     <p data-quelle="5b572a45b096">There is no automated decision-making, including profiling, within the meaning of Art. 22 GDPR.</p>
@@ -181,7 +181,7 @@
 
     <h2 data-quelle="34538baeda2c">14. Changes</h2>
     <p data-quelle="c700f3601a28">We update this privacy policy when app features or legal requirements change. The current version is available at this address and is linked in the app.</p>
-    <p data-quelle="2d57a84cffe2">Version 1.2, as of <time class="stand" datetime="2026-10-27">27 October 2026</time>.</p>
+    <p data-quelle="b2f5e3aa2186">Version 1.3, as of <time class="stand" datetime="2026-10-28">28 October 2026</time>.</p>
   </section>
 
   <footer>

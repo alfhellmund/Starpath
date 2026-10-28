@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1>Datenschutzerklärung</h1>
-    <p>Starpath — Fassung 1.2, Stand: <time class="stand" datetime="2026-10-27">27. Oktober 2026</time></p>
+    <p>Starpath — Fassung 1.3, Stand: <time class="stand" datetime="2026-10-28">28. Oktober 2026</time></p>
     <p><a class="andere-sprachen" href="privacy.html">Andere Sprachen</a></p>
   </header>
 
@@ -42,13 +42,13 @@
 
     <h3>3.1 Standort (GPS)</h3>
     <p>Starpath fragt nach der Ortungsfreigabe „Beim Verwenden der App“, sobald Sie in der Astronavigation GPS einschalten. Ohne Freigabe arbeitet die App mit Ihren eigenen Eingaben.</p>
-    <p><strong>Zweck:</strong> Die GPS-Position wird auf der Karte als Marker und gepunktete Spur gezeigt, Kurs und Fahrt über Grund werden angezeigt, Sie können die GPS-Position als Ausgangsort übernehmen, und die GPS-Kontrolle vergleicht sie mit dem aus Ihren Sichten beobachteten Ort (Schutz gegen gestörtes oder verfälschtes GPS).</p>
+    <p><strong>Zweck:</strong> Die GPS-Position wird auf der Karte als Marker und gepunktete Spur gezeigt, Kurs und Fahrt über Grund werden angezeigt, Sie können die GPS-Position als Standort übernehmen, und der GPS-Abgleich vergleicht sie mit dem aus Ihren Beobachtungen berechneten beobachteten Ort (Schutz gegen gestörtes oder verfälschtes GPS).</p>
     <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; die App nutzt den Standort nur mit Ihrer Ortungsfreigabe (siehe Abschnitt 6).</p>
     <p><strong>Speicherung:</strong></p>
     <ul>
       <li>Der Verlauf der GPS-Positionen der letzten 24 Stunden wird nur im Arbeitsspeicher gehalten und beim Beenden der App verworfen.</li>
-      <li>Beim Speichern einer Sicht wird die GPS-Position zum Sichtzeitpunkt (Breite, Länge, Zeit, Genauigkeit) mit der Sicht gespeichert.</li>
-      <li>Übernehmen Sie die GPS-Position als Ausgangsort, steht sie mit der Herkunft „GPS“ im Logbuch.</li>
+      <li>Beim Speichern einer Beobachtung wird die GPS-Position zur Beobachtungszeit (Breite, Länge, Zeit, Genauigkeit) mit der Beobachtung gespeichert.</li>
+      <li>Übernehmen Sie die GPS-Position als Standort, steht sie mit der Herkunft „GPS“ im Logbuch.</li>
       <li>Dass GPS eingeschaltet war, merkt sich die App, damit es nach einem Neustart wieder läuft (nur bei bestehender Freigabe).</li>
     </ul>
     <p>Sie können die Freigabe jederzeit in den Systemeinstellungen unter <em>Datenschutz &amp; Sicherheit → Ortungsdienste → Starpath</em> ändern oder widerrufen.</p>
@@ -56,23 +56,23 @@
     <h3>3.2 Luftdruck (Barometer)</h3>
     <p>Wählen Sie in den Einstellungen unter <em>Druckquelle</em> „Gerät“, liest Starpath den Luftdruck aus dem Barometer von iPad oder iPhone. Dafür fragt das System nach der Freigabe „Bewegung &amp; Fitness“. Ab Werk ist „Fest“ eingestellt; dann wird kein Sensor gelesen.</p>
     <p><strong>Zweck:</strong> Refraktionsbeschickung der Sextantenhöhe.</p>
-    <p><strong>Speicherung:</strong> Jede neue Sicht übernimmt den letzten Messwert mit Messzeit und Herkunft. Auf dem Mac gibt es diese Funktion nicht.</p>
+    <p><strong>Speicherung:</strong> Jede neue Beobachtung übernimmt den letzten Messwert mit Messzeit und Herkunft. Auf dem Mac gibt es diese Funktion nicht.</p>
     <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO; die App liest den Sensor nur mit Ihrer Freigabe „Bewegung &amp; Fitness“ (siehe Abschnitt 6).</p>
 
-    <h3>3.3 Navigationsdaten: Sichten, Beobachtungsreihen, Bestecke, Logbuch, Reisen</h3>
+    <h3>3.3 Navigationsdaten: Beobachtungen, Bestecke, beobachtete Orte, Logbuch, Reisen</h3>
     <p>Was Sie in der Astronavigation eintragen oder berechnen, speichert Starpath in einer Datenbank im App-Container des Geräts (<code>sessions.sqlite</code>):</p>
     <ul>
-      <li><strong>Beobachtungsreihen</strong> mit Name, Anlage- und Änderungszeit, Temperatur, Luftdruck und dem berechneten Besteck (Breite, Länge, Zeit, Genauigkeit).</li>
-      <li><strong>Sichten</strong> mit Zeitpunkt, Gestirn, Sextantenablesung, Beschickungen und Ihren Überschreibungen, Augeshöhe, angenommenem Ort, Temperatur, Luftdruck und ggf. der GPS-Position zum Sichtzeitpunkt (3.1).</li>
-      <li><strong>Logbuch</strong> mit Ausgangsorten (Breite, Länge, Zeit, Herkunft: von Hand, GPS oder beobachtet), Kurs- und Fahrteinträgen sowie Reisebeginn (mit Reisename und Abfahrtsort) und Reiseende.</li>
+      <li><strong>Bestecke</strong> mit Name, Anlage- und Änderungszeit, Temperatur, Luftdruck und dem berechneten beobachteten Ort (Breite, Länge, Zeit, Genauigkeit).</li>
+      <li><strong>Beobachtungen</strong> mit Zeitpunkt, Gestirn, Sextantenablesung, Beschickungen und Ihren Überschreibungen, Augeshöhe, Rechenbezug, Temperatur, Luftdruck und ggf. der GPS-Position zur Beobachtungszeit (3.1).</li>
+      <li><strong>Logbuch</strong> mit Standorten (Breite, Länge, Zeit, Herkunft: von Hand, GPS oder beobachtet), Kurs- und Fahrteinträgen sowie Reisebeginn (mit Reisename und Abfahrtsort) und Reiseende.</li>
     </ul>
     <p>Vor einer Umstellung des Datenbankformats bei einem App-Update legt Starpath einmalig eine Sicherungskopie dieser Datenbank im selben Container an.</p>
     <p>Diese Daten zeigen, wo und wann sich Ihr Schiff befand. Sie bleiben auf dem Gerät.</p>
-    <p><strong>Zweck:</strong> Standlinien und Besteck berechnen, Koppelweg und Logbuch führen und Ihre Beobachtungsreihen, Bestecke und Reisen über einen Neustart hinaus wieder aufrufen. Die Sicherungskopie vor einer Formatumstellung dient dazu, nach einem Fehler zum vorherigen Stand zurückkehren zu können.</p>
+    <p><strong>Zweck:</strong> Standlinien und beobachteten Ort berechnen, Koppelweg und Logbuch führen und Ihre Bestecke und Reisen über einen Neustart hinaus wieder aufrufen. Die Sicherungskopie vor einer Formatumstellung dient dazu, nach einem Fehler zum vorherigen Stand zurückkehren zu können.</p>
     <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
     <h3>3.4 Einstellungen</h3>
-    <p>Einstellungen wie Einheiten, Sprache, Darstellung, Schriftgröße, Augeshöhe, Temperatur, Luftdruck, Druckquelle, Instrumentenbeschickung, Sternkarten- und Kartenebenen-Anzeige speichert Starpath in den App-Einstellungen des Geräts. Dazu kommen technische Zähler, die das Gerät nicht verlassen: die Zahl der App-Starts (für den Zeitpunkt der Bewertungsanfrage, 4.3), der Zeitpunkt der letzten Leistungsdaten-Lieferung von Apple und die Zahl der darin enthaltenen Diagnosemeldungen (4.2), sowie der Anzeigestand der Bedienhinweise.</p>
+    <p>Einstellungen wie Einheiten, Sprache, Erscheinungsbild, Schriftgröße, Augeshöhe, Temperatur, Luftdruck, Druckquelle, Instrumentenfehler, Sternkarten- und Kartenebenen-Anzeige speichert Starpath in den App-Einstellungen des Geräts. Dazu kommen technische Zähler, die das Gerät nicht verlassen: die Zahl der App-Starts (für den Zeitpunkt der Bewertungsanfrage, 4.3), der Zeitpunkt der letzten Leistungsdaten-Lieferung von Apple und die Zahl der darin enthaltenen Diagnosemeldungen (4.2), sowie der Anzeigestand der Bedienhinweise.</p>
     <p><strong>Zweck:</strong> Ihre Voreinstellungen bei jedem Start anwenden; die Zähler bestimmen den Zeitpunkt der Bewertungsanfrage (4.3) bzw. erscheinen im Diagnosebericht (3.6), und bereits gezeigte Bedienhinweise werden nicht wiederholt.</p>
     <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
@@ -89,7 +89,7 @@
       <li>aktuelle Ansicht und gewähltes Datum, Zeitzone, Sprache und Region;</li>
       <li>den aktuellen Ort mit Kurs, Fahrt, Herkunft und Zeit, die Logbucheinträge (einschließlich Reisenamen), Stand der Ortungsfreigabe und GPS-Empfang;</li>
       <li>die Einstellungen der App (Werte der App-eigenen Einstellungen; von Apple-Systemkomponenten abgelegte Einträge nur mit Namen, ohne Wert);</li>
-      <li>die aktuelle Beobachtungsreihe mit allen Sichten, Beschickungen, GPS-Positionen zum Sichtzeitpunkt und Bestecken; von den übrigen Reihen nur Name, Anlagedatum und Zahl der Sichten;</li>
+      <li>das aktuelle Besteck mit allen Beobachtungen, Beschickungen, GPS-Positionen zur Beobachtungszeit und beobachteten Orten; von den übrigen Bestecken nur Name, Anlagedatum und Zahl der Beobachtungen;</li>
       <li>Speicherstatistik und Fehlerstände.</li>
     </ul>
     <p>Der Bericht enthält keinen Gerätenamen, keine Geräte- oder Werbe-ID und kein Konto. Er wird für die Weitergabe als Datei im temporären Verzeichnis der App abgelegt.</p>
@@ -102,7 +102,7 @@
     <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO, hilfsweise lit. f (siehe Abschnitt 6).</p>
 
     <h3>3.8 PDF-Export</h3>
-    <p>Starpath erzeugt auf dem Gerät PDF-Dateien: die Ephemeriden der Tagesseite oder des gesamten Jahres, Beschickungstafeln, ein leeres Formblatt für die Rechnung von Hand und das Besteck aus der Astronavigation. Das Besteck enthält Ihre Sichten und Positionen; die Beschickungstafeln enthalten die eingestellte Augeshöhe, Temperatur und den Luftdruck. Die Datei geht nur dorthin, wo Sie sie über Sichern, Teilen oder Drucken hinschicken oder ablegen.</p>
+    <p>Starpath erzeugt auf dem Gerät PDF-Dateien: die Ephemeriden der Tagesseite oder des gesamten Jahres, Beschickungstafeln, ein leeres Formblatt für die Rechnung von Hand und das Besteck aus der Astronavigation. Das Besteck enthält Ihre Beobachtungen und Positionen; die Beschickungstafeln enthalten die eingestellte Augeshöhe, Temperatur und den Luftdruck. Die Datei geht nur dorthin, wo Sie sie über Sichern, Teilen oder Drucken hinschicken oder ablegen.</p>
     <p><strong>Zweck:</strong> Jahrbuchseiten, Tafeln, Formblatt und Besteck ausdrucken, sichern oder weitergeben.</p>
     <p><strong>Rechtsgrundlage:</strong> § 25 Abs. 2 Nr. 2 TDDDG, Art. 6 Abs. 1 lit. b DSGVO (siehe Abschnitt 6).</p>
 
@@ -152,14 +152,14 @@
     <h2>8. Speicherdauer und Löschung</h2>
     <ul>
       <li><strong>GPS-Verlauf:</strong> nur im Arbeitsspeicher, höchstens 24 Stunden, endet mit dem Beenden der App.</li>
-      <li><strong>Navigationsdaten und Einstellungen:</strong> bis Sie sie löschen. Beobachtungsreihen, Sichten und Logbucheinträge können Sie in der App einzeln löschen. „App zurücksetzen“ in den Einstellungen setzt die Einstellungen zurück und leert den Rechencache; gespeicherte Bestecke und das Logbuch bleiben dabei erhalten. Mit dem Löschen der App entfernt das System alle Daten der App vom Gerät.</li>
+      <li><strong>Navigationsdaten und Einstellungen:</strong> bis Sie sie löschen. Bestecke, Beobachtungen und Logbucheinträge können Sie in der App einzeln löschen. „App zurücksetzen“ in den Einstellungen setzt die Einstellungen zurück und leert den Rechencache; gespeicherte Bestecke und das Logbuch bleiben dabei erhalten. Mit dem Löschen der App entfernt das System alle Daten der App vom Gerät.</li>
       <li><strong>Diagnosebericht- und PDF-Dateien zum Teilen:</strong> im temporären Verzeichnis der App, das das System selbst bereinigt; was Sie weitergegeben haben, liegt beim gewählten Empfänger.</li>
       <li><strong>Support-Mails und Diagnoseberichte bei uns:</strong> bis die Anfrage abgeschlossen ist, danach werden sie spätestens nach 12 Monaten gelöscht.</li>
       <li><strong>Website-Protokolle:</strong> nach den Vorgaben von GitHub (Abschnitt 5).</li>
     </ul>
 
     <h2>9. Pflicht zur Bereitstellung</h2>
-    <p>Sie sind weder gesetzlich noch vertraglich verpflichtet, Daten bereitzustellen. Ohne Ortungsfreigabe gibt es keine GPS-Anzeige und keine GPS-Kontrolle, ohne Bewegungsfreigabe keinen gemessenen Luftdruck; alle übrigen Funktionen arbeiten mit Ihren Eingaben. Ohne Diagnosebericht können wir einen Fehler unter Umständen schwerer nachvollziehen.</p>
+    <p>Sie sind weder gesetzlich noch vertraglich verpflichtet, Daten bereitzustellen. Ohne Ortungsfreigabe gibt es keine GPS-Anzeige und keinen GPS-Abgleich, ohne Bewegungsfreigabe keinen gemessenen Luftdruck; alle übrigen Funktionen arbeiten mit Ihren Eingaben. Ohne Diagnosebericht können wir einen Fehler unter Umständen schwerer nachvollziehen.</p>
 
     <h2>10. Keine automatisierte Entscheidungsfindung</h2>
     <p>Es findet keine automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO statt.</p>
@@ -193,7 +193,7 @@
 
     <h2>14. Änderungen</h2>
     <p>Wir passen diese Datenschutzerklärung an, wenn sich Funktionen der App oder rechtliche Anforderungen ändern. Die aktuelle Fassung steht unter dieser Adresse und ist in der App verlinkt.</p>
-    <p>Fassung 1.2, Stand: <time class="stand" datetime="2026-10-27">27. Oktober 2026</time>.</p>
+    <p>Fassung 1.3, Stand: <time class="stand" datetime="2026-10-28">28. Oktober 2026</time>.</p>
   </section>
 
   <footer>
