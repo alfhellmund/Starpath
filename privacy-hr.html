@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1 data-quelle="a1235efbc18d">Pravila o zaštiti privatnosti</h1>
-    <p data-quelle="0e8a57c3da86">Starpath — verzija 1.3, stanje: <time class="stand" datetime="2026-10-28">28. listopada 2026.</time></p>
+    <p data-quelle="45c231448297">Starpath — verzija 1.4, stanje: <time class="stand" datetime="2026-10-30">30. listopada 2026.</time></p>
     <p><a class="andere-sprachen" href="privacy.html" data-quelle="84041901390a">Drugi jezici</a></p>
   </header>
 
@@ -36,13 +36,13 @@
 
     <h3 data-quelle="ad5605d0746b">3.1 Lokacija (GPS)</h3>
     <p data-quelle="cf6ba39103c3">Aplikacija Starpath traži dopuštenje pristupa lokaciji „Tijekom uporabe aplikacije” čim u astronavigaciji uključite GPS. Bez dopuštenja aplikacija radi s vašim vlastitim unosima.</p>
-    <p data-quelle="1747cc498a87"><strong>Svrha:</strong> GPS pozicija prikazuje se na karti kao oznaka i točkasti trag, prikazuju se kurs preko dna i brzina preko dna, GPS poziciju možete preuzeti kao polaznu poziciju, a usporedba s GPS-om uspoređuje je s opaženom pozicijom izračunatom iz vaših motrenja (zaštita od ometanog ili krivotvorenog GPS-a).</p>
+    <p data-quelle="2f4fdd6e8e8a"><strong>Svrha:</strong> GPS pozicija prikazuje se na karti kao oznaka i točkasti trag, prikazuju se kurs preko dna i brzina preko dna, GPS poziciju možete preuzeti kao polaznu poziciju, a usporedba s GPS-om uspoređuje je s opaženom pozicijom izračunatom iz vaših motrenja (zaštita od ometanog ili krivotvorenog GPS-a).</p>
     <p data-quelle="2fc8a0eb42b4"><strong>Pravna osnova:</strong> § 25. stavak 2. točka 2. TDDDG-a, članak 6. stavak 1. točka (b) GDPR-a; aplikacija koristi lokaciju samo uz vaše dopuštenje pristupa lokaciji (vidi odjeljak 6).</p>
     <p data-quelle="fffec6e4f3af"><strong>Pohrana:</strong></p>
     <ul>
-      <li data-quelle="9ccab4e8e509">Povijest GPS pozicija za posljednja 24 sata čuva se samo u radnoj memoriji i odbacuje se pri zatvaranju aplikacije.</li>
-      <li data-quelle="eaea9c75d4e3">Pri spremanju motrenja GPS pozicija u trenutku motrenja (širina, dužina, vrijeme, točnost) pohranjuje se zajedno s motrenjem.</li>
-      <li data-quelle="6b62e29d9e0c">Ako GPS poziciju preuzmete kao polaznu poziciju, ona se upisuje u brodski dnevnik s podrijetlom „GPS”.</li>
+      <li data-quelle="b9b95d8db9af">Povijest GPS pozicija za posljednja 24 sata čuva se samo u radnoj memoriji i odbacuje se pri zatvaranju aplikacije.</li>
+      <li data-quelle="b0a11b240711">Pri spremanju motrenja GPS pozicija u trenutku motrenja (širina, dužina, vrijeme, točnost) pohranjuje se zajedno s motrenjem.</li>
+      <li data-quelle="dfb05f67ab6a">Ako GPS poziciju preuzmete kao polaznu poziciju, ona se upisuje u brodski dnevnik s podrijetlom „GPS”.</li>
       <li data-quelle="3ae25a9860d3">Aplikacija pamti da je GPS bio uključen kako bi nakon ponovnog pokretanja ponovno radio (samo ako dopuštenje još vrijedi).</li>
     </ul>
     <p data-quelle="5fa9478c86e8">Dopuštenje možete u bilo kojem trenutku promijeniti ili povući u postavkama sustava pod <em>Privatnost i sigurnost → Lokacijske usluge → Starpath</em>.</p>
@@ -57,7 +57,7 @@
     <p data-quelle="85916c886e22">Ono što u astronavigaciji unesete ili izračunate aplikacija Starpath pohranjuje u bazu podataka u spremniku aplikacije na uređaju (<code>sessions.sqlite</code>):</p>
     <ul>
       <li data-quelle="632d2cb2602b"><strong>Serije motrenja</strong> s nazivom, vremenom izrade i izmjene, temperaturom, tlakom zraka i izračunatom opaženom pozicijom (širina, dužina, vrijeme, točnost).</li>
-      <li data-quelle="70b432d4347e"><strong>Motrenja</strong> s trenutkom, nebeskim tijelom, očitanjem sekstanta, popravcima i vašim ručnim izmjenama, visinom oka, referentnom pozicijom, temperaturom, tlakom zraka i, ako postoji, GPS pozicijom u trenutku motrenja (3.1).</li>
+      <li data-quelle="6e45be804b44"><strong>Motrenja</strong> s trenutkom, nebeskim tijelom, očitanjem sekstanta, popravcima i vašim ručnim izmjenama, visinom oka, referentnom pozicijom, temperaturom, tlakom zraka i, ako postoji, GPS pozicijom u trenutku motrenja (3.1).</li>
       <li data-quelle="84c8216a25d6"><strong>Brodski dnevnik</strong> s polaznim pozicijama (širina, dužina, vrijeme, podrijetlo: ručno, GPS ili opažena), unosima kursa i brzine te početkom putovanja (s nazivom putovanja i mjestom polaska) i krajem putovanja.</li>
     </ul>
     <p data-quelle="e28ecfe9c3fb">Prije promjene formata baze podataka pri ažuriranju aplikacije Starpath jednokratno izrađuje sigurnosnu kopiju te baze podataka u istom spremniku.</p>
@@ -83,7 +83,7 @@
       <li data-quelle="119f6f6bc2a6">trenutačni prikaz i odabrani datum, vremensku zonu, jezik i regiju;</li>
       <li data-quelle="c14d34f3a85d">trenutačnu poziciju s kursom, brzinom, podrijetlom i vremenom, unose u brodskom dnevniku (uključujući nazive putovanja), stanje dopuštenja pristupa lokaciji i prijam GPS-a;</li>
       <li data-quelle="0a85fd294c91">postavke aplikacije (vrijednosti vlastitih postavki aplikacije; unose koje su pohranile Appleove sustavne komponente samo s nazivom, bez vrijednosti);</li>
-      <li data-quelle="3140d9cd0e48">trenutačnu seriju motrenja sa svim motrenjima, popravcima, GPS pozicijama u trenutku motrenja i opaženim pozicijama; od ostalih serija motrenja samo naziv, datum izrade i broj motrenja;</li>
+      <li data-quelle="b19e6168abad">trenutačnu seriju motrenja sa svim motrenjima, popravcima, GPS pozicijama u trenutku motrenja i opaženim pozicijama; od ostalih serija motrenja samo naziv, datum izrade i broj motrenja;</li>
       <li data-quelle="797bca76e1e6">statistiku pohrane i stanja pogrešaka.</li>
     </ul>
     <p data-quelle="4932b8d9ff47">Izvješće ne sadrži naziv uređaja, identifikator uređaja ni oglasni identifikator niti račun. Radi prosljeđivanja sprema se kao datoteka u privremeni direktorij aplikacije.</p>
@@ -181,7 +181,7 @@
 
     <h2 data-quelle="34538baeda2c">14. Izmjene</h2>
     <p data-quelle="c700f3601a28">Ova pravila o zaštiti privatnosti prilagođavamo kad se promijene funkcije aplikacije ili pravni zahtjevi. Aktualna verzija dostupna je na ovoj adresi i povezana je u aplikaciji.</p>
-    <p data-quelle="b2f5e3aa2186">Verzija 1.3, stanje: <time class="stand" datetime="2026-10-28">28. listopada 2026.</time></p>
+    <p data-quelle="dd114de91dc4">Verzija 1.4, stanje: <time class="stand" datetime="2026-10-30">30. listopada 2026.</time></p>
   </section>
 
   <footer>

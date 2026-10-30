@@ -10,7 +10,7 @@
 <main>
   <header>
     <h1 data-quelle="a1235efbc18d">Integritetspolicy</h1>
-    <p data-quelle="0e8a57c3da86">Starpath — version 1.3, senast uppdaterad <time class="stand" datetime="2026-10-28">28 oktober 2026</time></p>
+    <p data-quelle="45c231448297">Starpath — version 1.4, senast uppdaterad <time class="stand" datetime="2026-10-30">30 oktober 2026</time></p>
     <p><a class="andere-sprachen" href="privacy.html" data-quelle="84041901390a">Andra språk</a></p>
   </header>
 
@@ -36,13 +36,13 @@
 
     <h3 data-quelle="ad5605d0746b">3.1 Plats (GPS)</h3>
     <p data-quelle="cf6ba39103c3">Starpath frågar efter platstillståndet ”När appen används” så snart du slår på GPS i astronomisk navigation. Utan tillstånd arbetar appen med dina egna inmatningar.</p>
-    <p data-quelle="1747cc498a87"><strong>Ändamål:</strong> GPS-positionen visas på kartan som markör och prickat spår, kurs över grund och fart över grund visas, du kan ta över GPS-positionen som utgångsposition, och GPS-kontrollen jämför den med den observerade position som beräknats ur dina observationer (skydd mot störd eller förfalskad GPS).</p>
+    <p data-quelle="2f4fdd6e8e8a"><strong>Ändamål:</strong> GPS-positionen visas på kartan som markör och prickat spår, kurs över grund och fart över grund visas, du kan ta över GPS-positionen som utgångsposition, och GPS-kontrollen jämför den med den observerade position som beräknats ur dina observationer (skydd mot störd eller förfalskad GPS).</p>
     <p data-quelle="2fc8a0eb42b4"><strong>Rättslig grund:</strong> § 25 stycke 2 punkt 2 TDDDG, artikel 6.1 b i GDPR; appen använder bara platsen med ditt tillstånd för platstjänster (se avsnitt 6).</p>
     <p data-quelle="fffec6e4f3af"><strong>Lagring:</strong></p>
     <ul>
-      <li data-quelle="9ccab4e8e509">Förloppet av GPS-positionerna under de senaste 24 timmarna hålls bara i arbetsminnet och kasseras när appen avslutas.</li>
-      <li data-quelle="eaea9c75d4e3">När en observation sparas, sparas GPS-positionen vid observationstidpunkten (latitud, longitud, tid, noggrannhet) tillsammans med observationen.</li>
-      <li data-quelle="6b62e29d9e0c">Om du tar över GPS-positionen som utgångsposition står den i loggboken med ursprunget ”GPS”.</li>
+      <li data-quelle="b9b95d8db9af">Förloppet av GPS-positionerna under de senaste 24 timmarna hålls bara i arbetsminnet och kasseras när appen avslutas.</li>
+      <li data-quelle="b0a11b240711">När en observation sparas, sparas GPS-positionen vid observationstidpunkten (latitud, longitud, tid, noggrannhet) tillsammans med observationen.</li>
+      <li data-quelle="dfb05f67ab6a">Om du tar över GPS-positionen som utgångsposition står den i loggboken med ursprunget ”GPS”.</li>
       <li data-quelle="3ae25a9860d3">Att GPS var påslagen kommer appen ihåg, så att den körs igen efter en omstart (bara om tillståndet fortfarande gäller).</li>
     </ul>
     <p data-quelle="5fa9478c86e8">Du kan när som helst ändra eller återkalla tillståndet i systeminställningarna under <em>Integritet och säkerhet → Platstjänster → Starpath</em>.</p>
@@ -57,7 +57,7 @@
     <p data-quelle="85916c886e22">Det du matar in eller beräknar i astronomisk navigation sparar Starpath i en databas i appens container på enheten (<code>sessions.sqlite</code>):</p>
     <ul>
       <li data-quelle="632d2cb2602b"><strong>Observationsomgångar</strong> med namn, skapande- och ändringstid, temperatur, lufttryck och den beräknade observerade positionen (latitud, longitud, tid, noggrannhet).</li>
-      <li data-quelle="70b432d4347e"><strong>Observationer</strong> med tidpunkt, himlakropp, sextantavläsning, höjdrättningar och dina åsidosättningar, ögonhöjd, referensposition, temperatur, lufttryck och i förekommande fall GPS-positionen vid observationstidpunkten (3.1).</li>
+      <li data-quelle="6e45be804b44"><strong>Observationer</strong> med tidpunkt, himlakropp, sextantavläsning, höjdrättningar och dina åsidosättningar, ögonhöjd, referensposition, temperatur, lufttryck och i förekommande fall GPS-positionen vid observationstidpunkten (3.1).</li>
       <li data-quelle="84c8216a25d6"><strong>Loggbok</strong> med utgångspositioner (latitud, longitud, tid, ursprung: för hand, GPS eller observerad), kurs- och fartposter samt resans början (med resans namn och avgångsort) och resans slut.</li>
     </ul>
     <p data-quelle="e28ecfe9c3fb">Innan en appuppdatering ändrar databasformatet skapar Starpath en gång en säkerhetskopia av denna databas i samma container.</p>
@@ -83,7 +83,7 @@
       <li data-quelle="119f6f6bc2a6">aktuell vy och valt datum, tidszon, språk och region;</li>
       <li data-quelle="c14d34f3a85d">den aktuella positionen med kurs, fart, ursprung och tid, loggboksposterna (inklusive resornas namn), status för platstillståndet och GPS-mottagning;</li>
       <li data-quelle="0a85fd294c91">appens inställningar (värden för appens egna inställningar; poster som Apples systemkomponenter har sparat bara med namn, utan värde);</li>
-      <li data-quelle="3140d9cd0e48">den aktuella observationsomgången med alla observationer, höjdrättningar, GPS-positioner vid observationstidpunkten och observerade positioner; av övriga observationsomgångar bara namn, skapandedatum och antal observationer;</li>
+      <li data-quelle="b19e6168abad">den aktuella observationsomgången med alla observationer, höjdrättningar, GPS-positioner vid observationstidpunkten och observerade positioner; av övriga observationsomgångar bara namn, skapandedatum och antal observationer;</li>
       <li data-quelle="797bca76e1e6">lagringsstatistik och felstatus.</li>
     </ul>
     <p data-quelle="4932b8d9ff47">Rapporten innehåller inget enhetsnamn, inget enhets- eller reklam-id och inget konto. För att kunna lämnas vidare läggs den som fil i appens tillfälliga katalog.</p>
@@ -181,7 +181,7 @@
 
     <h2 data-quelle="34538baeda2c">14. Ändringar</h2>
     <p data-quelle="c700f3601a28">Vi anpassar denna integritetspolicy när appens funktioner eller de rättsliga kraven ändras. Den aktuella versionen finns på denna adress och är länkad i appen.</p>
-    <p data-quelle="b2f5e3aa2186">Version 1.3, senast uppdaterad <time class="stand" datetime="2026-10-28">28 oktober 2026</time>.</p>
+    <p data-quelle="dd114de91dc4">Version 1.4, senast uppdaterad <time class="stand" datetime="2026-10-30">30 oktober 2026</time>.</p>
   </section>
 
   <footer>
